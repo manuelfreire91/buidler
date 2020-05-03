@@ -26,7 +26,7 @@ if (shouldBuildTests) {
 
 // only run Vyper tests in Linux CI environment,
 // and ignore if using a Windows machine (since Docker Desktop is required, only available windows Pro)
-const shouldIgnoreVyperTests = (isGithubActions && !isLinux) || isWindows;
+const shouldIgnoreVyperTests = (isGithubActions && !isLinux) || isWindows || true;
 
 // Solpp tests don't work in Windows
 const shouldIgnoreSolppTests = isWindows;
