@@ -7,7 +7,7 @@ jobs:
       - image: circleci/node:erbium
     steps:
       - checkout
-      - node/without-cache:
+      - node:
           steps:
             - run: npm install -g node-gyp-cache
             - run: npm config set node_gyp node-gyp-cache
